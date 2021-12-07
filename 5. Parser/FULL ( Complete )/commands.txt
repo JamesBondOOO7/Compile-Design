@@ -1,0 +1,6 @@
+Run these commands in order:
+
+bison -d cfgForC.y
+flex lexForC.l
+gcc -o a.out y.tab.c lex.yy.c -lfl -lm
+./a.out < input_file
